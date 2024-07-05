@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form </title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1 id="title">Survey form</h1>
+  <p id="description">This is a simple survey form</p>
+  <form id="survey-form">
+    <div>
+      <label id="name-label" >
+        <div>Full Name</div>
+        <input id="name" placeholder="Enter Full Name" required type="text"> 
+      </label>
+    </div>
+    <div>
+      <label id="email-label">
+         <div> Enter Email</div>
+      <input id="email" placeholder="Enter your email"  required type="email">
+      </label>
+    </div>
+    <div>
+      <label id="number-label">
+         <div>Select Age</div>
+      <input id="number" placeholder="Select Age" required type="number" min="4" max="100" >
+      </label>
+    </div>
+    <div>
+      <select required id="dropdown">
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+    </div>
+    <label>
+      <input type="radio" value="single" name="marital">Single
+      <input type="radio" value="married" name="marital">Married
+      <input type="radio"  value="divorced" name="marital">Divorced
+    </label>
+<div>
+    <input name="checkbox" type="checkbox" value="student">Student
+    <input name="checkbox " type="checkbox" value="employed">Employed
+</div>
+
+<Div>
+  <textarea></textarea>
+</div>
+<div>
+<button id="submit" type="submit">SUBMIT<button>
+</div>
+    </div>
+<label>
+  <button id="submit " type="submit"></button>
+</label>
+  </form>
+</body>
+</html>
